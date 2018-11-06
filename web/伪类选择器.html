@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+       /* .father span:first-child {
+            color: yellow;
+        }
+        .father span:last-child {
+            color: #c81623;
+        }*/
+       ul li {
+           list-style: none;
+       }
+       .father li:nth-child(2n){
+            background-color: green;
+        }
+       .father li:nth-child(2n+1){
+           background-color: red;
+       }
+        /*!*奇数*!
+        .father li:nth-child(odd) {
+            background-color: #c81623;
+        }
+        !*偶数*!
+        .father li:nth-child(even) {
+            background-color: yellow;
+        }*/
+
+    </style>
+</head>
+<body>
+<!--/*伪类选择器   first-child  last-child  nth-child(n) {
+
+}*/-->
+
+
+<ul class="father">
+    <li>1span</li>
+    <li>2span</li>
+    <li>3span</li>
+    <li>4span</li>
+    <li>5span</li>
+</ul>
+
+</body>
+</html>

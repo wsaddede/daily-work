@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择器</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /*字体大小*/
+            font-size: 30px;
+            font-family: '微软雅黑';
+            font-weight: 400;   /*100-900  400 normal  bold 600 */
+
+        }
+       /* div {
+            background-color: yellow;
+            color: darkgreen;
+
+        }*/
+
+        /*.first-ele {
+
+            color: blue;
+        }*/
+        /*.second {
+            font-size: 40px;
+        }*/
+        /*div.second {
+
+        }*/
+
+      /*  div.second, p.second,.first-ele {
+            color: black;
+
+        }*/
+       /* 后代选择器*/
+        /*.father li {
+            font-size: 50px;
+        }*/
+        /*子代选择器*/
+       /* .father>li {
+            font-size: 60px;
+        }*/
+      /* .f1 p+p {
+            background-color: orangered;
+        }*/
+        [index='1'] {
+            color: deeppink;
+        }
+        [href='#'] {
+            color: green;
+        }
+        a:hover {
+            color: #c81623;
+        }
+/*
+  *  0 < 标签 1 < 类 10 < id 100  < 内联样式< important
+*/
+
+
+
+
+
+    </style>
+</head>
+<body>
+<!--  1： 通配符  * -->
+<!--2:标签选择器  div img p em -->
+<!--3:类选择器 名字   变量命名法  驼峰 getElementStyle
+ class 类  class = 'a'
+
+ 4:id  唯一 主关键字   id=''   #+Id名
+ 5:交集选择器  div.class
+ 6:并集选择器  ,
+7:后代选择器  标签名/类名/ID名 子代标签   孩子  +  孙子
+8：子代选择器  只选孩子  标签名/类名/ID名 > 子代标签
+9:属性选择器  属性名 attr= '属性值'
+10:伪类选择器  :hover 鼠标移入元素后的样式
+
+
+
+
+ -->
+
+
+<ul  class="father">
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+</ul>
+<a href="#">点我有惊喜</a>
+<div  index = '1' >1</div>
+<div class="second" index = '2'>2</div>
+<div class="first-ele  ">3</div>
+
+<div class="f1">
+    <p class="second">我是p1</p>
+    <p >我是p2</p>
+    <p>我是p3</p>
+</div>
+
+</body>
+</html>
